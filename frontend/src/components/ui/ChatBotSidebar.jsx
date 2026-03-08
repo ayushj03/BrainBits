@@ -30,11 +30,11 @@ const ChatBotSidebar = () => {
       className={styles.sidebar}
     >
       {/* Logo */}
-      <div className={styles.logoSection}>
+      {/* <div className={styles.logoSection}>
         <Link to="/dashboard" className={styles.logoContainer}>
           <img src="/logo.png" alt="BrainBits" className={styles.logoIcon} />
         </Link>
-      </div>
+      </div> */}
 
       {/* Search */}
       <div className={styles.searchSection}>
