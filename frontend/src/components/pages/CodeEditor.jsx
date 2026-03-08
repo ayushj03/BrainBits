@@ -3,7 +3,7 @@ import { Play, Square, ToggleLeft, ToggleRight, Plus, X, ChevronDown, Pencil, Ch
 import EditorPanel from "../ui/EditorPanel";
 import LivePreview from "../ui/LivePreview";
 import Terminal from "../ui/Terminal";
-import SpaceBackground from "../ui/SpaceBackground";
+import SpaceBackground from "../../components/ui/Spacebackground";
 import { runCode } from "../helpers/CodeEditorAPI";
 import { DEFAULT_CODE } from "../helpers/CodeEditorConstants";
 import Sidebar from "../ui/Sidebar";

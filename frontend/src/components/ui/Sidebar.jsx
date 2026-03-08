@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect, useState } from "react";
+import logo from "../../../assets/logo.png";
 
 const NAV_ITEMS = [
 	{ label: "Dashboard",     link: "/dashboard"     },
@@ -315,7 +316,7 @@ const Sidebar = () => {
 
 					{/* Brand */}
 					<Link to="/" className="sb-brand">
-						<span className="sb-brand-text">BrainBits</span>
+						<img src={logo} alt="Logo" className="sb-logo" />
 					</Link>
 
 					<div className="sb-sep" />
