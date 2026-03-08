@@ -34,7 +34,7 @@ const Sidebar = () => {
 							nickname: user.nickname,
 						}),
 					});
-				} catch (_) {}
+				} catch (_) { }
 			}
 		};
 		saveUserToDB();

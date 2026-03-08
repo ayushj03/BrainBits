@@ -2,6 +2,8 @@ import { Link, useLocation } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect, useState } from "react";
 import { NavItems } from "../helpers/NavItems";
+import logo from "../../../assets/logo.png";
+
 
 const Navbar = () => {
 	const { isLoading, isAuthenticated, error, loginWithRedirect: login, logout: auth0Logout, user } = useAuth0();
@@ -241,6 +243,12 @@ const Navbar = () => {
 					border-bottom: 1px solid #10b981;
 					border-right: 1px solid #10b981;
 				}
+				
+				.sb-logo{
+					width: 100px;
+					height: 28px;
+					object-fit: cover;
+				}
 
 				/* Scanning line effect */
 				@keyframes scan {
@@ -298,14 +306,11 @@ const Navbar = () => {
 
 					{/* Logo */}
 					<Link to="/" className="nav-logo" style={{ minWidth: 160 }}>
-						<span className="logo-icon">BB</span>
-						<span className="logo-text-primary">Brain</span>
-						<span className="logo-text-accent">Bits</span>
-						<span className="cursor-blink" />
+						<img src={logo} alt="Logo" className="sb-logo" />
 					</Link>
 
 					{/* Nav links */}
-					<ul style={{ display: "flex", gap: "clamp(20px, 3vw, 48px)", listStyle: "none", margin: 0, padding: 0 }}>
+					{/* <ul style={{ display: "flex", gap: "clamp(20px, 3vw, 48px)", listStyle: "none", margin: 0, padding: 0 }}>
 						{NavItems.map((item) => {
 							const isActive = location.pathname === item.link;
 							return (
@@ -319,7 +324,7 @@ const Navbar = () => {
 								</li>
 							);
 						})}
-					</ul>
+					</ul> */}
 
 					{/* Auth area */}
 					<div className="user-chip" style={{ minWidth: 160, justifyContent: "flex-end" }}>

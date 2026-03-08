@@ -259,9 +259,9 @@ const ChatBotChatArea = () => {
                 transition={{ duration: 0.2 }}
                 className={styles.emptyState}
               >
-                <div className={styles.emptyIconWrap}>
+                {/* <div className={styles.emptyIconWrap}>
                   <Zap size={28} color="#20a0c0" strokeWidth={1.5} />
-                </div>
+                </div> */}
                 <h2 className={styles.emptyTitle}>How can I help you today?</h2>
                 {/* <p className={styles.emptySubtitle}>
                   ASK ME ANYTHING · POWERED BY BRAINBITS AI
